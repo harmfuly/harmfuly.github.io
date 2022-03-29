@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+    a {
+    text-decoration: none;
+}
+    header {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+    nav {
+        height: 110px;
+        display: flex;
+        justify-content: space-between;
+        align-content: stretch;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+    }
+    .logo {
+    display: block;
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 36px;
+    color: #000;
+    margin-left: 80px;
+}   
+    .menu {
+    margin-left: 660px;
+    }
+    .menu_list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}  
+    .link {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 24px;
+    color: #000;
+    margin: 0 46px; 
+}
+.block1 {
+    height: 622px;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://images.unsplash.com/photo-1494415859740-21e878dd929d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzOTMxNTg2MQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920);
+    background-size: cover;
+}
+    h1 {
+    font-weight: 700;
+    font-size: 60px;
+    color: #fff;
+    text-transform: uppercase;
+}
+    .title_bl1 {
+    text-align: center;
+    padding-top: 267px;
+    }
+
+    .line {
+    position: absolute;
+    left: 0; 
+    right: 0;
+    top: 470px;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 80px;
+    height: 10px;
+    background: #817070;
+
+}
+    .block2 {
+    height: 584px;
+    background: #fff;
+    margin-bottom: 0;
+}
+    h2 {
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+    .bl2_content {
+    display: flex;
+    flex-direction: row;
+} 
+    .img_bl2 {
+    width: 600px;
+    height: 400px;
+    margin-left: 80px;
+}
+    .text_bl2 {
+    font-weight: 300;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 123px; 
+    margin-top: auto;
+    margin-bottom: auto;
+}
+    .block3 {
+    height: 711px;
+    background: #EFEFEF;
+}
+    .post1, .post2, .post3 {
+    width: 365px;
+    height: 474px;
+    background: #fff;
+}
+    .title_post1, .title_post2, .title_post3 {
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+    .img_post1, .img_post2, .img_post3 {
+    width: 325px;
+    height: 216px;
+}
+    .block3_content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px auto;
+}  
+    .post1_content, .post2_content, .post3_content {
+    margin: 20px;
+}
+    .title_bl3, .title_bl4 {
+    padding-top: 60px;
+    margin-top: 0;
+}
+    .block4 {
+    height: 337px;
+    background: #817070;
+}
+    .title_bl4 {
+    color: #fff;
+    margin-bottom: 0;
+}
+    form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 28px;
+}
+    input {
+    background: transparent;
+    border: 3px solid #FFFFFF;
+    width: 300px;
+    height: 55px;
+}
+    input::placeholder {
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+    input:focus::placeholder { 
+    font-size: 14px; 
+    transform: translateY(-16px); 
+}
+    .submit_form {
+    width: 129px;
+    height: 55px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    background: #fff;
+    color: #817070;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 28px;
+    margin-left: 90px;
+    margin-bottom: 58px;
+}
+    footer {
+    height: 73px;
+    background: #fff;
+}
+    .footer_text {
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 29px;
+}
