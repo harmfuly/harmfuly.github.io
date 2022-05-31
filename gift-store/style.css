@@ -247,7 +247,7 @@ a {
     font-weight: 700;
     font-size: 32px;
     line-height: 140.62%;
-    color: #000;
+    color: #000000;
 }
 
 .subtitle-bl4 {
@@ -271,7 +271,7 @@ a {
 }
 
 .find-gift-now:hover {
-    background: #F7941E;
+    background: transparent;
     color: #231F20;
     border: 1px solid #000000;
 }
