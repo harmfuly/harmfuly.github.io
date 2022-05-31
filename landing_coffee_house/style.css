@@ -47,6 +47,9 @@ body {
     color: #000;
     margin: 0 46px; 
 }
+.link:hover {
+    color: #817070;
+}
 .block1 {
     height: 622px;
     margin: 0;
