@@ -271,8 +271,9 @@ a {
 }
 
 .find-gift-now:hover {
-    background: transparent;
+    background: #F7941E;
     color: #231F20;
+    border: 1px solid #000000;
 }
 
 .btn-bl1:hover {
