@@ -9,19 +9,25 @@ body {
     a {
     text-decoration: none;
 }
-    header {
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+    
+header {
     background: #fff;
     display: flex;
     justify-content: space-between;
 }
-    nav {
-        height: 110px;
-        display: flex;
-        justify-content: space-between;
-        align-content: stretch;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        align-items: center;
+nav {
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
     }
     .logo {
     display: block;
