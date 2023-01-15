@@ -30,6 +30,11 @@ html {
 
 body {
     background: #EEE8FF;
+    font-family: 'Lato';
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -71,4 +76,45 @@ h1 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 30px;
+    padding-left: 0;
+    transition: 0.2s;
+
+}
+
+.contact-list a:hover, {
+    opacity: 0.5;
+}
+
+h2 {
+    font-size: 34px;
+    margin-bottom: 40px;
+    color:#3F1892;
+    text-align: center;
+}
+p {
+    font-size: 18px;
+    color: #3F1892;
+    line-height: 24px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    font-size: 18px;
+    color: #3F1892;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+footer {
+    margin-top: 190px;
 }
