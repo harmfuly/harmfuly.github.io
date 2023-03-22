@@ -1,0 +1,493 @@
+/* GENERAL STYLES */
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: #32292F;
+}
+
+.btn {
+    padding: 12px 24px;
+    transition: 0.3s all;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+/* NAVIGATION STYLES */
+
+nav {
+    background: white;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+nav .navbar-brand {
+    font-size: 16px;
+    color: #32292F;
+    font-weight: 700;
+    transition: 0.3s all;
+}
+
+nav .navbar-brand:hover {
+    opacity: 0.5;
+}
+
+nav .navbar-nav .nav-item .nav-link {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: 0.3s all;
+    text-transform: uppercase;
+}
+
+nav .navbar-nav .nav-item .nav-link.active,
+nav .navbar-nav .nav-item .nav-link:hover {
+    font-weight: 600;
+    border-bottom: 1px solid #32292F;
+    line-height: 16px;
+}
+
+.navbar .navbar-nav .nav-item:not(:first-child) {
+    margin-left: 48px;
+}
+
+nav .collapse .link-secondary {
+    margin-right: 60px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 390px) {
+    nav .navbar-toggler {
+        border: none;
+    }
+    nav .navbar-collapse .link-secondary {
+        display: none;
+    }
+    nav .navbar-nav .nav-item.dropdown {
+        left: 48px;
+    }
+    nav .navbar-nav .nav-item .nav-link.active,
+    nav .navbar-nav .nav-item .nav-link:hover {
+        width: 110px;
+    }
+
+    .navbar .navbar-nav .nav-item:not(:first-child) {
+        margin-left: 0;
+    }
+
+    nav .navbar-nav {
+        text-align: center;
+    }
+
+    nav .navbar-nav .nav-item.dropdown {
+        left: 0;
+    }
+
+}
+
+/* PIRMAS BLOKAS*/
+
+.pirmas {
+    background: white;
+    /* height: 768px; */
+    position: relative;
+}
+
+.pirmas::before {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    display: block;
+    background: #F6F4F5;
+    width: 822px;
+    height: 768px;
+}
+
+.pirmas .row {
+    z-index: 10;
+    position: relative;
+}
+
+
+.pirmas h1 {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 200;
+    margin-top: 170px;
+}
+
+.pirmas p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.pirmas .btn {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.pirmas .btn:hover {
+    background: white;
+    border: 1px solid #32292F;
+    color: #32292F;
+}
+
+.pirmas .row .col-7 {
+    margin-top: 100px;
+}
+
+.pirmas .row .col-7 .line-black {
+    background: #32292F;
+    height: 2px;
+    width: 122px;
+}
+
+.pirmas .row .col-7 .line-grey {
+    background: #D6D4D5;
+    height: 1px;
+    width: 402px;
+} 
+
+.pirmas .row .col-7 .for-slider span {
+    position: relative;
+    bottom: 14px;
+    left: 410px;
+    font-size: 14px;
+}
+
+.pirmas .row .col-7 .for-slider {
+    margin-left: 310px;
+}
+
+@media only screen and (max-width: 390px) {
+    
+    .pirmas {
+        background: #F6F4F5;
+        padding-bottom: 44px;
+    }
+    
+    .pirmas .row {
+        flex-direction: column-reverse;
+    }
+
+    .pirmas::before {
+        display: none;
+    }
+
+    .pirmas .col-4 {
+        width: 100%;
+    }
+
+    .pirmas .row .col-7 {
+        margin-top: 0;
+    }
+
+    .pirmas .col-7 img {
+        width: 100vw;
+    }
+
+    .pirmas .row .col-7 .for-slider {
+        margin-left: 0;
+        width: 100vw;
+    }
+
+    .pirmas .row .col-7 .for-slider .line-black {
+        width: 87px;
+    }
+
+    .pirmas .row .col-7 .for-slider .line-grey {
+        width: 286px;
+    }
+
+    .pirmas .row .col-7 .for-slider span {
+        left: 320px;
+    }
+
+    .pirmas .btn {
+        width: 100%;
+    }
+
+    .pirmas h1 {
+        margin-top: 14px;
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+/* ANTRAS BLOKAS*/
+
+.antras {
+    background: white;
+}
+
+.antras h2 {
+    font-size: 40px;
+    font-weight: 200;
+    margin-top: 150px;
+}
+
+.antras #pirmas {
+    margin-top: 55px;
+}
+
+.antras .row .col-4 {
+    margin-left: 109px;
+}
+
+.antras #pirmas::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background: #D9D9D9;
+    width: 80px;
+    height: 160px;
+    right: 1440px;
+    top: 1005px;
+}
+
+.antras .row .col-4 h3 {
+    margin-top: 180px;
+    margin-bottom: 16px;
+}
+
+.antras .row .col-4 .btn {
+    font-size: 14px;
+    color: #32292F;
+}
+
+.antras .row .col-6 {
+    margin-top: 55px;
+}
+
+.antras #antras .col-4 {
+    margin-left: 0;
+    margin-right: 109px;
+}
+
+.antras .row .col-4 .btn:hover {
+    color: white;
+}
+
+@media only screen and (max-width: 390px) {
+    
+    .antras #pirmas {
+        flex-direction: column-reverse;
+        margin-top: 32px;
+    }
+
+    .antras .row .col-4 {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        margin-top: 32px;
+    }
+
+    .antras #antras {
+        margin-top: 0;
+    }
+
+    .antras #pirmas img,
+    .antras #antras img {
+        width: 100%;
+    }
+
+    .antras #pirmas .col-lg-6.col-4{
+        width: 100%;
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .antras #pirmas .col-4 h3,
+    .antras #antras .col-4 h3 {
+        margin-top: 0;
+    }
+
+    .antras h2 {
+        font-size: 32px;
+        line-height: 48px;
+        margin-top: 68px;
+    }
+
+    .antras .btn {
+        width: 100%;
+    }
+
+    .antras #antras.mt-5  {
+        margin-top: 0!important;
+    }
+
+    .antras #antras .col-6 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 72px;
+    }
+}
+
+/* TRECIAS BLOKAS*/
+
+.trecias h3 {
+    margin-top: 176px;
+    margin-bottom: 48px;
+}
+
+.trecias p {
+    margin-top: 16px;
+}
+
+.trecias {
+    padding-bottom: 132px;
+}
+
+
+@media only screen and (max-width: 390px) {
+    
+    .trecias {
+        padding-bottom: 0;
+        position: relative;
+    }
+
+    .trecias h3 {
+        margin-top: 105px;
+        margin-bottom: 32px;
+    }
+
+    .trecias img {
+        width: 100%;
+    }
+
+    .trecias #trecia-pirmas {
+        flex-direction: column;
+    }
+
+    .trecias #trecia-antras {
+        margin-top: 0!important;
+    }
+
+    .trecias #trecia-pirmas .col-8,
+    .trecias #trecia-pirmas .col-4,
+    .trecias #trecia-antras .col-6 {
+        width: 100%;
+    }
+
+    .trecias #trecia-pirmas .col-8 img,
+    .trecias #trecia-pirmas .col-4 img,
+    .trecias #trecia-antras .col-6 img {
+        height: 277px;
+    }
+
+    .trecias #trecia-pirmas .col-8 p,
+    .trecias #trecia-pirmas .col-4 p,
+    .trecias #trecia-antras .col-6 p {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 64px;
+    }
+
+    .trecias #trecia-antras .col-6 p:nth-child(2) {
+        margin-bottom: 96px;
+    }
+
+    .trecias::before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        display: block;
+        background: #F6F4F5;
+        width: 263px;
+        height: 1705px;
+        bottom: 50px;
+    }
+}
+
+
+
+/* FOOTER */
+
+
+footer p {
+    font-size: 16px;
+    color: #32292F;
+    font-weight: 700;
+    width: 114px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+footer p:hover {
+    opacity: 0.5;
+}
+
+footer .nav .nav-item .nav-link {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #32292F;
+    transition: 0.3s all;
+}
+
+footer .policy-links a {
+    font-size: 12px;
+    color: #32292F;
+    transition: 0.3s all;
+}
+
+footer .policy-links a:hover,
+footer .nav .nav-item .nav-link:hover {
+    border-bottom: 1px solid #32292F;
+    line-height: 16px;
+}
+
+footer .contacts {
+    font-size: 12px;
+}
+
+footer .footer-line {
+    background: #D6D4D5;
+    width: 100%;
+    height: 1px;
+}
+
+footer .copywrite {
+    font-size: 11px;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 390px) {
+    
+    footer {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    footer .col-2 {
+        width: 100%;
+    }
+
+    footer .nav-item .px-4 {
+        padding-left: 0!important;
+    }
+
+    footer .col-5 {
+        width: 40%;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    footer .policy-links {
+        display: none;
+    }
+
+    footer .copywrite {
+        width: 100%;
+    }
+}
