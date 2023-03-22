@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -55,6 +56,10 @@ a.navigation {
     line-height: 50px;
     color: #010201;
     transition: 0.5s;
+}
+
+.btn_burger {
+    display: none;
 }
 
 .navigation:hover {
@@ -130,7 +135,7 @@ a {
 
 .about {
     background: #fff;
-    height: 666px;
+    margin-bottom: 145px;
 }
 
 .content_bl2 {
@@ -204,6 +209,7 @@ a {
     background: transparent;
     padding: 12px 32px;
     transition: 0.5s;
+    margin: 0;
 }
 
 .btn_container_bl3 {
@@ -239,6 +245,15 @@ h4 {
     color: #717171;
 }
 
+.service-button-active {
+    background-color: #E06733;
+    color: #fff;
+}
+
+.service-item-blur {
+    filter: blur(2px);
+}
+
 .card1, .card2, .card3, .card4, .card5, .card6 {
     display: flex;
     flex-direction: column;
@@ -271,6 +286,108 @@ h4 {
     margin-top: 40px;
 }
 
+.left_part_bl4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.choice {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    margin-top: 60px;
+    padding: 34px 41px;
+    gap: 33px;
+}
+
+.accordion {
+    background: url("./img/accordion_btn.png") 95% / 6% no-repeat #EDF2EC;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 18px;
+    width: 250px;
+    text-align: left;
+    transition: 0.4s;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+.active, .accordion:hover {
+    background-color: #D6E7D2;
+  }
+
+.active {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #D6E7D2;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width: 250px;
+    height: 154px;
+    border-radius: 0px 0px 20px 20px;
+  }
+
+.line {
+    background: #AEA1A1;
+    height: 0.5px;
+    width: 164px;
+  }
+
+.price__item-text {
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+    color: #717171;
+    font-family: 'Inter';
+    margin-top: 6px;
+}
+
+.price__item-btn {
+    display: inline-block;
+    padding: 3px 20px;
+    color: #717171;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    background: #FFF;
+    border-radius: 10px;
+    transition: all 0.5s;
+    text-decoration: none;
+    font-family: 'Inter';
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.price__item-btn:hover,
+.price__item-btn:focus-visible {
+    color: #fff;
+    background-color: #717171;
+    font-family: 'Inter';
+}
+.price__item-price {
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000; 
+    font-family: 'Inter';
+}
+.red-price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #E06733;
+    font-family: 'Inter';
+}
+
 .title_price_right {
     text-align: right;
     margin-bottom: 38px;
@@ -281,43 +398,9 @@ h4 {
     background: #fff;
 }
 
-.choice {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 332px;
-    height: 282.01px;
-    border: 1px solid #E3E1D5;
-    border-radius: 20px;
-    margin-top: 60px;
-    padding: 34px 41px;
-}
-
-select {
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 20px;
-    color: #000000;
-    border-radius: 20px;
-    border: none;
-    width: 250px;
-    height: 50px;
-    padding-left: 40px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: url("./img/accordion_btn.png") 95% / 6% no-repeat #EDF2EC;
-    outline: none;
-    cursor: pointer;
-}
-
-select::-ms-expand { 
-    display: none;
-}
-
 .content_bl4 {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding-bottom: 115px;
 }
@@ -326,6 +409,7 @@ select::-ms-expand {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    gap: 38px;
 }
 
 .pic_bl4 {
@@ -337,28 +421,210 @@ select::-ms-expand {
     background: #EDF2EC;
 }
 
-.title_bl5 {
-    font-family: 'Inika';
+.contacts-flex {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+.contacts__title {
+    margin-bottom: 38px;
+    color: #499A18;
+    font-family: 'Inika', serif;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-    color: #499A18;
     text-align: center;
+    align-self: center;
+    transition: margin-bottom 0.5s;
 }
 
-.content_bl5 {
-    padding-top: 60px;
+.contact-us-title {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    margin: 0 0 37px;
 }
 
-.pic_and_form_bl5 {
-    display: flex;
+.adress-container {
+    display: none;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-top: -62px;
+    width: 448px;
+    height: 214px;
+    background: #EDF2EC;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 17px 35px 32px;
+    margin: 61px 0 0;
 }
 
-.form_city {
-    margin-top: 90px;
+.input-city {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 100%;
+    padding: 5px 35px 5px 20px;
+    color: #717171;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    background: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s;
+}
+.city-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.select {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    margin-bottom: 47px;
+    font-family: 'Inter';
+}
+.select.on .city-list{
+    visibility: visible;
+    opacity: 1;
+}
+.select.on .input-city {
+    background-color: #C1E698;
+    border: 1px solid #D6E7D2;
+    box-shadow: none;
+}
+.input-city::after {
+    content: url(./img/accordion_btn.png);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 10%;
+    right: 35px;
+}
+.select.on .input-city::after {
+    content: url(./img/accordion_btn2.png);
+}
+.input-city:hover {
+    background: #C1E698;
+    box-shadow: none;
+}
+.city-list {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 0; 
+    top: 100%;
+    width: 100%;
+    background-color: #DCE9D9;
+    padding: 27px 35px;
+    transition: all 0.5s;
+}
+.option-city {
+    color: #499A18;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #D9D9D9;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.option-city:hover {
+    color: var(--H-GRAY);
+    border-bottom: 1px solid #717171;
+}
+.selected {
+    background-color: #C1E698;
+    border: 1px solid #D6E7D2;
+    box-shadow: none;
+}
+
+.address-card {
+    margin-top: 47px;
+}
+
+.city-address-card {
+    display: none;
+    width: 448px;
+    height: 214px;
+    background: #EDF2EC;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 17px 33px 32px 33px;
+}
+.city-address-card p {
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+}
+
+.contacts__title {
+    margin-bottom: 38px;
+    font-family: 'Inika', serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    align-self: center;
+    transition: margin-bottom 0.5s;
+}
+
+.contacts-wrapper{
+    min-height: 491px;
+    background: url(./img/contact_woman_1.png) no-repeat;
+    background-size: auto 100%;
+    background-position: bottom left;
+    padding-top: 60px;
+    padding-bottom: 83px;
+}
+
+.show {
+    display: block;
+}
+
+.call-us {
+    display: block;
+    border: 1px solid #E06733;
+    background-color: #EDF2EC;
+    border-radius: 5px;
+    padding: 6px 45px;
+    font-family: 'Inika';
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    color: #717171;
+    margin: 15px auto;
+}
+
+.link-call-us {
+    align-self: center;
+}
+
+.button-call-us {
+    width: 122px;
+    height: 26px;
+    font-size: 10px;
+    color: #717171;
+}
+
+table {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 39px;
+    letter-spacing: 0.05em;
+}
+th {
+    color: #000000;
+    font-weight: inherit;
+    text-align: left;
+}
+td {
+    color: #717171;
 }
 
 .form_bl5 {
@@ -395,7 +661,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 180px;
+    width: 170px;
 }
 
 .footer_text, .center_part_footer {
@@ -433,4 +699,38 @@ a.logo_link {
     align-items: end;
     justify-content: space-between;
     width: 80px;
+}
+
+.center_part_footer {
+    margin: 0 auto;
+}
+
+.container_img_card1, .container_img_card2, .container_img_card3, .container_img_card4, .container_img_card5, .container_img_card6 {
+    width: 330px;
+    height: 350px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.container_img_card1 {
+    background-image: url(./img/first.png);
+}
+
+.container_img_card2 {
+    background: url(./img/second.png);
+}
+
+.container_img_card3 {
+    background-image: url("./img/third.png");
+}
+
+.container_img_card4 {
+    background-image: url("./img/forth.png");
+}
+
+.container_img_card5 {
+    background-image: url("./img/fifth.png");
+}
+
+.container_img_card6 {
+    background-image: url("./img/sixth.png");
 }
